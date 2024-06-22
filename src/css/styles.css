@@ -1,0 +1,120 @@
+/* Basic reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Honk', sans-serif; /* Example font */
+    background-color: #b2a10c; /* Light gray background */
+    /* You can add background image or gradient here */
+    /* background-image: url('path/to/image.jpg'); */
+    /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); */
+    background-image: url('../images/blob-scene-haikei.png');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    overflow:scroll;
+    background-blend-mode:exclusion;
+}
+
+/* Header styles */
+.en-tete {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #955b5b;
+    text-size-adjust: 280px;
+    background-image: url('../images/blob-scene-haikei-3.png');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    text-shadow: #955b5b;
+    text-decoration-color: goldenrod;
+    text-decoration: wavy;
+}
+
+/* Main content styles */
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 50px;
+    font-family: fantasy;
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto; /* Center horizontally */
+    position: middle;
+    text-decoration-color: beige;
+    color: bisque;
+    text-align: center;
+    font-family: "Playwrite PL", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Video wrapper styles */
+.video-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Button styles */
+.btn-fleche {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background-image: url('../images/IMG_4909.JPG');
+    stroke-dashoffset: -480;
+    transition: 3s ease-in-out 'click';
+    position:absolute ;
+    top: 55%;
+    background-size: 200%;
+    border-radius: 50px;
+}
+
+.btn-fleche.btn-retourner {
+    left: 100px; /* Adjust distance from the left */
+    transform: rotateY(180deg);
+}
+
+.btn-fleche.btn-avancer {
+    right: 100px; /* Adjust distance from the right */
+}
+
+/* Video container styles */
+.apresentacao {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Page (li) styles */
+.pagina {
+    display: none; /* Hide all pages by default */
+}
+
+.pagina.selecionada {
+    display: block; /* Show selected page */
+    cursor: pointer;
+    border-radius: 60%;
+}
+
+/* Video player styles */
+.video-player {
+    width: 70%; /* Ensure video takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure video doesn't exceed its container width */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto; /* Center horizontally */
+    cursor: pointer;
+}
+
